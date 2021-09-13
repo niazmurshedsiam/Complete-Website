@@ -1,4 +1,5 @@
 import React from 'react';
+import BusinessInfo from '../BusinessInfo/BusinessInfo';
 import HeaderMain from '../HeaderMain/HeaderMain';
 import Navbar from '../Navbar/Navbar';
 import './Header.css';
@@ -7,6 +8,7 @@ const Header = () => {
         <div class="header-container">
             <Navbar></Navbar>
             <HeaderMain></HeaderMain>
+            <BusinessInfo></BusinessInfo>
             
         </div>
     );

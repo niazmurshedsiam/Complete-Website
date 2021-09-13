@@ -1,6 +1,5 @@
 .header-container{
     height: 700px;
     background-image: url(../../../images/chairBg.png);
-    z-index: -50;
     background-size: cover;
 }
