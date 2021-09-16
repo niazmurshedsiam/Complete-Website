@@ -3,6 +3,7 @@ import Footer from '../../Shared/Footer/Footer';
 import Navbar from '../../Shared/Navbar/Navbar';
 import AppointmentHeader from '../AppointmentHeader/AppointmentHeader';
 import { useState } from "react";
+import BookAppointment from '../BookAppointment/BookAppointment';
 const Appointment = () => {
     const [selectedDate,setSelectedDate] = useState(new Date());
     const handleDateChange= date => {
@@ -12,6 +13,7 @@ const Appointment = () => {
         <div>
             <Navbar></Navbar>
             <AppointmentHeader handleDateChange={handleDateChange}></AppointmentHeader>
+            <BookAppointment date={selectedDate}></BookAppointment>
             <Footer></Footer>
         </div>
     );
