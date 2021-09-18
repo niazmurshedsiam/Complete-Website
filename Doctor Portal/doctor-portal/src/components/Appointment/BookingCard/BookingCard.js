@@ -20,7 +20,7 @@ const BookingCard = ({ booking,date }) => {
           <p>{booking.visitingHour}</p>
           <p>{booking.totalSpace} SPACES AVAILABLE</p>
           <br />
-          <button className="btn btn-brand text-uppercase" onClick={openModal}>
+          <button onClick={openModal} className="btn text-uppercase bg-primary">
             BOOK APPOINTMENT
           </button>
           
