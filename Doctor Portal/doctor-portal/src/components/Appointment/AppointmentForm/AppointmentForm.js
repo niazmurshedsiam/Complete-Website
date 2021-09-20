@@ -18,7 +18,10 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn,date }) => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+      console.log(data);
+      closeModal();
+    };
   return (
     <div>
       <Modal
@@ -27,7 +30,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn,date }) => {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <h2 className="text-center text-brand">{appointmentOn}</h2>
+        <h2 className="text-center text-primary">{appointmentOn}</h2>
         <p className="text-secondary text-center"><small>ON {date.toDateString()}</small></p>
         <form onSubmit={handleSubmit(onSubmit)}>
           
@@ -112,7 +115,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn,date }) => {
           </div>
 
           <div className="form-group text-right">
-            <button type="submit" className="btn btn-brand">
+            <button type="submit" className="btn btn-brand bg-primary">
               Send
             </button>
           </div>
