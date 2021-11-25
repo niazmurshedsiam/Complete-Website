@@ -57,7 +57,7 @@ const Login = () => {
           </div>
           <div className="from-group mt-5">
             
-            <button className="btn" onClick={handleGoogleSignIn}>Google Sign in</button>
+            <button className="btn bg-primary" onClick={handleGoogleSignIn}>Google Sign in</button>
           </div>
         </div>
         
