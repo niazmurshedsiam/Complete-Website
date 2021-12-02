@@ -4,6 +4,7 @@ import Appointment from "./components/Appointment/Appointment/Appointment";
 import Home from "./components/Home/Home/Home";
 import Login from "./components/Login/Login/Login";
 import DashBoard from "./components/DashBoard/DashBoard/DashBoard";
+import AllPatients from "./components/AllPatients/AllPatients/AllPatients";
 
 export const UserContext = createContext();
 function App() {
@@ -19,6 +20,9 @@ function App() {
             <Route path="/dashboard/appointment">
               <DashBoard></DashBoard>
             </Route>
+            <Route path="/dashboard/allPatients">
+            <AllPatients></AllPatients>
+          </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
