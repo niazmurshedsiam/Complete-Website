@@ -30,7 +30,7 @@ const Sidebar = () => {
                     <FontAwesomeIcon icon={faHome} /> <span>Home</span>
                 </Link>
             </li>
-            {isDoctor && <div>
+             <div>
                 <li>
                     <Link to="/appointment" className="text-white">
                         <FontAwesomeIcon icon={faCalendar} /> <span>Appointments</span>
@@ -56,7 +56,7 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faCog} /> <span>Settings</span>
                     </Link>
                 </li>
-            </div>}
+            </div>
         </ul>
         <div>
             <Link to="/" className="text-white"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
