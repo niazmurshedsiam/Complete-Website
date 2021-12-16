@@ -4,7 +4,7 @@ import React, { useContext } from 'react';
 import { UserContext } from '../../../App';
 import { useHistory, useLocation } from 'react-router-dom';
 import firebaseConfig from "./firebase.config";
-
+import LoginBg from "../../../images/loginBg.png";
 
 const Login = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -60,9 +60,9 @@ const Login = () => {
             <button className="btn bg-primary" onClick={handleGoogleSignIn}>Google Sign in</button>
           </div>
         </div>
-        {/* <div className="col-md-6 d-none d-md-block align-self-end">
+        <div className="col-md-6 d-none d-md-block align-self-end">
           <img className="img-fluid" src={LoginBg} alt="" />
-        </div> */}
+        </div>
       </div>
     </div>
     );

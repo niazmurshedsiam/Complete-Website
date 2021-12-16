@@ -16,18 +16,18 @@ function App() {
       <Router>
         <div>
           <Switch>
-            <Route path="/appointment">
+            <PrivateRoute path="/appointment">
               <Appointment></Appointment>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute path="/dashboard">
               <DashBoard></DashBoard>
             </PrivateRoute>
             <PrivateRoute path="/allPatients">
             <AllPatients></AllPatients>
           </PrivateRoute>
-          <Route path="/addDoctor">
+          <PrivateRoute path="/addDoctor">
             <AddDoctor></AddDoctor>
-          </Route>
+          </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>

@@ -20,6 +20,10 @@ const AddDoctor = () => {
         formData.append('file', file);
         formData.append('name', info.name);
         formData.append('email', info.email);
+        formData.append('phone', info.phone);
+        formData.append('jobLocation', info.jobLocation);
+        formData.append('cadetBatch', info.cadetBatch);
+        formData.append('information', info.information);
 
         fetch('http://localhost:5000/addDoctor', {
             method: 'POST',
@@ -46,6 +50,22 @@ const AddDoctor = () => {
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Name</label>
                         <input onBlur={handleBlur} type="text" className="form-control" name="name" placeholder="Name" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1">Phone</label>
+                        <input onBlur={handleBlur} type="text" className="form-control" name="phone" placeholder="Phone" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1">Job Location</label>
+                        <input onBlur={handleBlur} type="text" className="form-control" name="jobLocation" placeholder="Job Location" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1">Cadet Batch</label>
+                        <input onBlur={handleBlur} type="text" className="form-control" name="cadetBatch" placeholder="Cadet Batch" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="exampleInputPassword1">Doctor Information</label>
+                        <input onBlur={handleBlur} type="text" className="form-control" name="information" placeholder="Doctor Information" />
                     </div>
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Upload a image</label>

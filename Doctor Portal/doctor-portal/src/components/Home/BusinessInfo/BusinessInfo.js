@@ -21,7 +21,7 @@ const BusinessInfo = () => {
         },
         {
             title: 'Call us now',
-            description: '+156846464463',
+            description: '01676257279',
             icon: faPhone,
             background: 'primary'
 

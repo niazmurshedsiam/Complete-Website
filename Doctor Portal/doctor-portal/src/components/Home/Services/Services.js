@@ -1,24 +1,24 @@
 import React from "react";
-import fluoride from '../../../images/fluoride.png';
+import Surgery from '../../../images/Surgery.png';
 import cavity from '../../../images/cavity.png';
-import whitening from '../../../images/whitening.png';
+import Medicine from '../../../images/Medicine.png';
 import ServicesDetails from "../ServicesDetails/ServicesDetails";
 
 const Services = () => {
     const serviceData = [
         {
-          name: "Fluoride Treatment",
-          image: fluoride,
+          name: "Surgery",
+          image: Surgery,
           description: "",
         },
         {
-          name: "Cavity Filling",
+          name: "Cavity Protection",
           image: cavity,
           description: "",
         },
         {
-          name: "Teeth Whitening",
-          image: whitening,
+          name: "Medicine",
+          image: Medicine,
           description: "",
         },
       ];

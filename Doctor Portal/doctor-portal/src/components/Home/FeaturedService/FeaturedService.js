@@ -10,7 +10,7 @@ const FeaturedService = () => {
           </div>
           <div className="col-md-7 align-self-center">
             <h1>
-              Exceptional Dental <br /> Care, on your Term
+              Exceptional Doctor <br /> Care, on your Term
             </h1>
             <p className="text-secondary my-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
