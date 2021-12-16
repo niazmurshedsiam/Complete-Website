@@ -6,19 +6,19 @@ import FooterCol from '../../Shared/FooterCol/FooterCol';
 
 const Footer = () => {
     const noNamed = [
-        {name: "Emergency Dental Care" , link: "/emergency"},
+        {name: "Emergency Doctor Care" , link: "/emergency"},
         {name: "Check Up" , link: "/checkup"},
         {name: "Treatment of Personal Diseases" , link: "/personal-treatment"},
         {name: "Tooth Extraction" , link: "/tooth-extract"},
         {name: "Check Up" , link: "/checkup"},
     ]
     const ourAddress = [
-        {name: "New York - 101010 Hudson" , link: "//google.com/map"},
-        {name: "Yards" , link: "//google.com/map"},
+        {name: "7A/1gha Dhanmondi" , link: "//google.com/map"},
+        {name: "Bangladesh" , link: "//google.com/map"},
        
     ]
     const oralHealth = [
-        {name: "Emergency Dental Care" , link: "/emergency"},
+        {name: "Emergency Doctor Care" , link: "/emergency"},
         {name: "Check Up" , link: "/checkup"},
         {name: "Treatment of Personal Diseases" , link: "/personal-treatment"},
         {name: "Tooth Extraction" , link: "/tooth-extract"},
@@ -27,7 +27,7 @@ const Footer = () => {
         {name: "Check Up" , link: "/checkup"}
     ]
     const services = [
-        {name: "Emergency Dental Care" , link: "/emergency"},
+        {name: "Emergency Doctor Care" , link: "/emergency"},
         {name: "Check Up" , link: "/checkup"},
         {name: "Treatment of Personal Diseases" , link: "/personal-treatment"},
         {name: "Tooth Extraction" , link: "/tooth-extract"},
@@ -51,7 +51,7 @@ const Footer = () => {
                         </ul>
                         <div className="mt-5">
                             <h6>Call now</h6>
-                            <button className="btn btn-primary">+2025550295</button>
+                            <button className="btn btn-primary">01676257279</button>
                         </div>
                     </FooterCol>
                 </div>

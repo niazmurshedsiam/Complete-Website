@@ -8,20 +8,20 @@ const Testimonials = () => {
     const testimonialData = [
         {
             quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-            name : 'Wilson Harry',
-            from : 'California',
+            name : 'Habib Rahman',
+            from : 'Dhaka',
             img : wilson
         },
         {
             quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-            name : 'Ema Gomez',
-            from : 'California',
+            name : 'Habiba',
+            from : 'Barisal',
             img : ema
         },
         {
             quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-            name : 'Aliza Farari',
-            from : 'California',
+            name : 'Halima',
+            from : 'Dhaka',
             img : aliza
         }
     ]
