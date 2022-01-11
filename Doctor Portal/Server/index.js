@@ -4,6 +4,7 @@ const cors = require('cors');
 const fs = require('fs-extra');
 const fileUpload = require('express-fileupload');
 const MongoClient = require('mongodb').MongoClient;
+const ObjectId = require('mongodb').ObjectId
 require('dotenv').config()
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.bm8mo.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
@@ -59,9 +60,13 @@ client.connect(err => {
 })
 app.post('/addDoctor',(req,res)=>{
   const file = req.files.file;
-  const name = req.body.name;
   const email = req.body.email;
-  console.log(name,email,file);
+  const name = req.body.name;
+  const phone = req.body.phone;
+  const jobLocation = req.body.jobLocation;
+  const cadetBatch = req.body.cadetBatch;
+  const information = req.body.information;
+  console.log(name,email,file,phone,jobLocation,cadetBatch,information);
   const filePath = `${__dirname}/doctors/${file.name}`;
   file.mv(filePath, err=>{
     if(err){
@@ -76,7 +81,7 @@ app.post('/addDoctor',(req,res)=>{
       img: Buffer.from(encImg, 'base64')
   };
 
-    doctorCollection.insertOne({name,email,image})
+    doctorCollection.insertOne({email,name,image,phone,jobLocation,cadetBatch,information})
     .then(result =>{
       fs.remove(filePath,error=>{
         if(error){
@@ -103,6 +108,17 @@ app.post('/isDoctor', (req, res) => {
         .toArray((err, doctors) => {
             res.send(doctors.length > 0);
         })
+})
+app.delete('/delete/:id', (req, res) => {
+  console.log(req.params.id);
+  doctorCollection.deleteOne({
+    _id: ObjectId(req.params.id)
+    
+  })
+    .then((result) => {
+      console.log(result);
+      res.send(result.deletedCount > 0)
+    })
 })
  
 });
