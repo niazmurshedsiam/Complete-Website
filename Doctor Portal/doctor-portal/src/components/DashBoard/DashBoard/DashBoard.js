@@ -4,6 +4,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { UserContext } from '../../../App';
+import Navbar from '../../Shared/Navbar/Navbar';
 
 const containerStyle = {
     backgroundColor: "#F4FDFB",
@@ -30,6 +31,8 @@ const DashBoard = () => {
     }, [selectedDate])
 
     return (
+        <>
+        <Navbar></Navbar>
         <section>
             <div style={containerStyle} className="container-fluid row">
                 <div className="col-md-2">
@@ -46,6 +49,7 @@ const DashBoard = () => {
                 </div>
             </div>
         </section>
+        </>
     );
 };
 
